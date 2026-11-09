@@ -1,0 +1,31 @@
+/* Gutenberg Span Wrapper – nur im Editor geladen, nie im Frontend. */
+
+/* Spans im Editor-Canvas dezent sichtbar machen (outline verändert das Layout nicht). */
+.editor-styles-wrapper span.custom-span {
+	outline: 1px dashed rgba(128, 128, 128, 0.6);
+	outline: 1px dashed color-mix(in srgb, currentColor 40%, transparent);
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+/* Popover zum Bearbeiten der Klassen. */
+.gsw-popover__content {
+	box-sizing: border-box;
+	width: 320px;
+	max-width: calc(100vw - 32px);
+	padding: 16px;
+}
+
+.gsw-popover__help {
+	margin: 8px 0 16px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #757575;
+}
+
+.gsw-popover__actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+}
